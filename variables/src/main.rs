@@ -81,8 +81,7 @@ fn main() {
 }
 
 fn another_function(x: i32) {
-    let y = println!("The value passed is {x}");
-    println!("{y}");
+    println!("The value passed is {x}")
 }
 
 fn print_labeled_measurement(value: i32, unit_label: char) {
