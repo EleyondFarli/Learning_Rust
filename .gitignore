@@ -1,1 +1,3 @@
 /guessing_game/Cargo.lock
+target/
+.idea
