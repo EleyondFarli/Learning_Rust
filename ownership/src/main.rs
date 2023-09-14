@@ -1,3 +1,9 @@
+fn incr(n: &mut i32) {
+
+    *n += 1;
+
+}
+
 fn main() {
     // Dereferencing a pointer
     let mut x: Box<i32> = Box::new(1);
@@ -30,4 +36,10 @@ fn main() {
     let s_len1 = str::len(&s); // explicit reference
     let s_len2 = s.len();      // implicit reference
     assert_eq!(s_len1, s_len2);
+
+
+    let mut n = 1;
+    incr(&mut n);
+    println!("{n}");
+
 }
