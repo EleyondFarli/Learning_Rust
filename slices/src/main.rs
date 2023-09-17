@@ -21,6 +21,13 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let slice = &a[1..3];
     assert_eq!(slice, &[2, 3]);
+
+    // &String is a normal pointer, &str is a fat pointer
+    println!(
+        "&String={} &str={}",
+        std::mem::size_of::<&String>(),
+        std::mem::size_of::<&str>(),
+    );
 }
 
 fn first_word(s: &str) -> &str {
